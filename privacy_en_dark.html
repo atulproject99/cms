@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy · KinSpot</title>
+
+  <style>
+    :root {
+      /* KinSpot Dark Theme */
+      --bg: #0F172A;
+      --card: #1E293B;
+      --text: #F8FAFC;
+      --muted: #94A3B8;
+      --primary: #2563EB;
+      --accent: #14B8A6;
+      --border: #334155;
+      --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+      --radius: 16px;
+      --maxw: 940px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+    }
+
+    main {
+      max-width: var(--maxw);
+      margin: 32px auto;
+      padding: 0 20px 48px;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, rgba(37,99,235,0.08), transparent), var(--card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
+      color: var(--text);
+    }
+
+    p.lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(14px, 2.1vw, 18px);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    @media (min-width: 860px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 6px 0;
+      font-size: clamp(20px, 3vw, 24px);
+      color: var(--text);
+    }
+
+    ul { margin: 0 0 0 18px; padding: 0; }
+    li { margin-bottom: 6px; color: var(--muted); }
+    li strong { color: var(--text); }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      max-width: var(--maxw);
+      margin: 24px auto 60px;
+      padding: 0 20px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  
+  <main>
+    <section class="hero">
+      <h1>Privacy Policy</h1>
+      <p class="lead">Your data stays yours. Learn how we collect, use, and protect it.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Information We Collect</h2>
+        <ul>
+          <li>Account info: name, email (from Google Sign-In).</li>
+          <li>Saved places: names, categories, coordinates, and notes.</li>
+          <li>Usage diagnostics to improve app quality.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>How We Use It</h2>
+        <ul>
+          <li>Sync your places across devices.</li>
+          <li>Provide navigation and search features.</li>
+          <li>Protect against fraud and abuse.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Your Controls</h2>
+        <ul>
+          <li>Export or delete your data anytime.</li>
+          <li>Granular permission prompts for location access.</li>
+          <li>Contact support for account deletion.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Data Retention & Sharing</h2>
+        <p>We do not sell your personal data. We retain data only as long as needed for providing the service, or as required by law.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 KinSpot. All rights reserved.
+  </footer>
+</body>
+</html>

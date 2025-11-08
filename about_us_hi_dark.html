@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us · हमारे बारे में</title>
+
+  <style>
+    :root {
+      /* KinSpot Dark Palette */
+      --bg: #0F172A;
+      --card: #1E293B;
+      --text: #F8FAFC;
+      --muted: #94A3B8;
+      --primary: #2563EB;
+      --accent: #14B8A6;
+      --border: #334155;
+      --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+      --radius: 16px;
+      --maxw: 940px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(10px);
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+    }
+
+    button.toggle {
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    main {
+      max-width: var(--maxw);
+      margin: 32px auto;
+      padding: 0 20px 48px;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, rgba(37,99,235,0.08), transparent), var(--card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
+      color: var(--text);
+    }
+
+    p.lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(14px, 2.1vw, 18px);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    @media (min-width: 860px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 6px 0;
+      font-size: clamp(20px, 3vw, 24px);
+      color: var(--text);
+    }
+
+    ul { margin: 0 0 0 18px; padding: 0; }
+    li { margin-bottom: 6px; color: var(--muted); }
+    li strong { color: var(--text); }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      max-width: var(--maxw);
+      margin: 24px auto 60px;
+      padding: 0 20px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .lang-hi [data-lang="en"], .lang-en [data-lang="hi"] { display: none; }
+  </style>
+</head>
+<body class="lang-hi">
+  <main>
+    <section class="hero">
+      <h1 data-lang="en">About Us</h1>
+      <h1 data-lang="hi">हमारे बारे में</h1>
+      <p class="lead" data-lang="en">A simple, private way to remember places and relationships that matter.</p>
+      <p class="lead" data-lang="hi">महत्वपूर्ण स्थानों और रिश्तों को याद रखने का सरल, सुरक्षित तरीका।</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2 data-lang="en">Our Mission</h2>
+        <h2 data-lang="hi">हमारा उद्देश्य</h2>
+        <p data-lang="en">KinSpot helps you save, organize, and navigate to the places that matter — family, friends, work, and beyond — with privacy-first design.</p>
+        <p data-lang="hi">किनस्पॉट आपकी निजी जगहों—परिवार, मित्र, कार्यस्थल और अन्य—को सुरक्षित रखने, व्यवस्थित करने और वहाँ पहुँचने में मदद करता है, पूरी गोपनीयता के साथ।</p>
+      </article>
+
+      <article class="card">
+        <h2 data-lang="en">What We Value</h2>
+        <h2 data-lang="hi">हमारे मूल्य</h2>
+        <ul>
+          <li data-lang="en"><strong>Privacy:</strong> You own your data.</li>
+          <li data-lang="hi"><strong>गोपनीयता:</strong> आपका डेटा आपका है।</li>
+          <li data-lang="en"><strong>Simplicity:</strong> Clean, fast, and useful.</li>
+          <li data-lang="hi"><strong>सरलता:</strong> साफ, तेज़ और उपयोगी।</li>
+          <li data-lang="en"><strong>Reliability:</strong> Works offline and online.</li>
+          <li data-lang="hi"><strong>विश्वसनीयता:</strong> ऑनलाइन और ऑफलाइन—दोनों में बेहतर।</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2 data-lang="en">Contact</h2>
+        <h2 data-lang="hi">संपर्क</h2>
+        <p data-lang="en">Have questions or feedback? Write to us at <a href="mailto:mauryaatul121@gmail.com">mauryaatul121@gmail.com</a>.</p>
+        <p data-lang="hi">कोई सवाल या सुझाव? हमें लिखें: <a href="mailto:mauryaatul121@gmail.com">mauryaatul121@gmail.com</a></p>
+      </article>
+
+      <article class="card">
+        <h2 data-lang="en">Credits</h2>
+        <h2 data-lang="hi">श्रेय</h2>
+        <p data-lang="en">Maps and geocoding powered by open mapping providers. Icons and illustrations are used under their respective licenses.</p>
+        <p data-lang="hi">मानचित्र और जियोकोडिंग ओपन मैपिंग प्रदाताओं द्वारा संचालित। आइकन और चित्र उनके लाइसेंस के अनुसार उपयोग किए गए हैं।</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <span data-lang="en">© 2025 KinSpot. All rights reserved.</span>
+    <span data-lang="hi">© 2025 किनस्पॉट। सर्वाधिकार सुरक्षित।</span>
+  </footer>
+
+  <script>
+    const body = document.body;
+    const langToggle = document.getElementById('langToggle');
+    langToggle.addEventListener('click', () => {
+      body.classList.toggle('lang-hi');
+      body.classList.toggle('lang-en');
+      localStorage.setItem('kinspot_lang', body.classList.contains('lang-hi') ? 'hi' : 'en');
+    });
+    const savedLang = localStorage.getItem('kinspot_lang');
+    if (savedLang === 'hi') {
+      body.classList.remove('lang-en');
+      body.classList.add('lang-hi');
+    }
+  </script>
+</body>
+</html>
