@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plop Pals Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Plop Pals mobile game (com.app.ploppals).">
+<style>
+  :root {
+    --bg: #fff8f2;
+    --card: #ffffff;
+    --ink: #2e211d;
+    --muted: #6f5a52;
+    --accent: #e8543f;
+    --line: #f1d9cc;
+    --head: #fff1e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17131a;
+      --card: #211b24;
+      --ink: #f2ecef;
+      --muted: #b6a9b0;
+      --accent: #ff8a73;
+      --line: #3a3040;
+      --head: #2b2330;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: 24px 16px 48px;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 28px 24px;
+  }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 21px; margin: 32px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+  p, li { max-width: 68ch; }
+  .meta { color: var(--muted); margin: 0 0 20px; }
+  .lead { font-size: 17px; }
+  a { color: var(--accent); }
+  code { font-size: 0.92em; background: var(--head); padding: 1px 6px; border-radius: 6px; }
+  .table-wrap { overflow-x: auto; margin: 12px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border: 1px solid var(--line); }
+  th { background: var(--head); }
+  .todo { background: #fff3a8; color: #3a2a00; padding: 1px 6px; border-radius: 6px; }
+  footer { max-width: 760px; margin: 16px auto 0; color: var(--muted); font-size: 14px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Plop Pals Privacy Policy</h1>
+  <p class="meta"><strong>Effective date:</strong> October 17, 2026</p>
+
+  <p class="lead">Plop Pals does not ask for your name, email, phone number or any account, but it shows ads from Google AdMob and uses Google Firebase Analytics, which collect some device and usage data automatically.</p>
+  <p>This policy explains what information the mobile game <strong>Plop Pals</strong> (app id <code>com.app.ploppals</code>, the "App") collects, how it is used, and the choices you have. The App is developed by Atul Maurya ("we", "us"). By using the App, you agree to this policy.</p>
+
+  <h2>Information we collect</h2>
+  <p><strong>Information you give us.</strong> None. The App has no sign-up, login, chat or forms. If you email us for support, we receive your email address and message.</p>
+  <p><strong>Information stored only on your device.</strong> Your best score, game progress, coins, unlocked skins, theme choice and settings (sound, vibration) are saved on your phone. This data is not sent to us, and it is deleted when you uninstall the App.</p>
+  <p><strong>Information collected automatically by third-party services:</strong></p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Data</th><th>Collected by</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td>Advertising ID (Android) or IDFA (iOS, only if you allow tracking)</td><td>Google AdMob</td><td>Showing ads, frequency limits, measuring ads, fraud prevention</td></tr>
+        <tr><td>IP address and approximate location derived from it (city or country level)</td><td>Google AdMob, Firebase</td><td>Choosing ads for your region, fraud prevention, analytics</td></tr>
+        <tr><td>Device information (model, operating system, language, screen size)</td><td>Google AdMob, Firebase</td><td>Showing ads that fit your device, analytics</td></tr>
+        <tr><td>Ad interactions (ads viewed, tapped, rewarded ads completed)</td><td>Google AdMob</td><td>Ad delivery and measurement</td></tr>
+        <tr><td>App usage (games played, scores, features used, session length) and an app instance ID</td><td>Firebase Analytics</td><td>Understanding how the game is played so we can improve it</td></tr>
+        <tr><td>Crash and performance data</td><td>Firebase</td><td>Fixing bugs</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>We do not collect your precise (GPS) location, contacts, photos, camera, microphone or files.</p>
+  <p><strong>Sharing your score.</strong> When you tap "Share score", your phone's share menu opens. You choose the app and the people to share with. We do not receive what you share.</p>
+
+  <h2>How we use information</h2>
+  <ul>
+    <li>To show ads, including rewarded ads you choose to watch (for example, to continue a game).</li>
+    <li>To measure how ads perform and to limit how often you see the same ad.</li>
+    <li>To understand how players use the App, fix bugs and improve the game.</li>
+    <li>To detect and prevent fraud, such as fake ad clicks.</li>
+    <li>To reply to your support emails.</li>
+  </ul>
+  <p>We do not sell your personal information for money. Advertising partners may use data as described in their own policies, which some laws treat as "sharing" or "selling" for targeted advertising. See "Your choices about ads and data" below to opt out.</p>
+
+  <h2>Third-party services</h2>
+  <p>These services collect data under their own privacy policies:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Service</th><th>Provider</th><th>Privacy policy</th></tr></thead>
+      <tbody>
+        <tr><td>AdMob (ads)</td><td>Google LLC</td><td><a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
+        <tr><td>Firebase Analytics</td><td>Google LLC</td><td><a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a></td></tr>
+        <tr><td>Google Play services</td><td>Google LLC</td><td><a href="https://policies.google.com/privacy">Google Privacy Policy</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Google explains how it uses data from apps that show its ads here: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>.</p>
+  <p>If we add another ad network or service later, we will list it here and update the effective date.</p>
+
+  <h2>Your choices about ads and data</h2>
+  <ul>
+    <li><strong>Consent (EEA, UK and Switzerland).</strong> When you first open the App in these regions, a consent message from Google asks whether ads may use your data. You can change your choice at any time in <strong>Settings → Privacy options</strong> inside the App.</li>
+    <li><strong>Personalized ads on Android.</strong> Go to your phone's <strong>Settings → Google → Ads</strong> (or <strong>Settings → Privacy → Ads</strong>) to delete or reset your advertising ID, or to opt out of personalized ads.</li>
+    <li><strong>Tracking on iOS.</strong> The App asks for permission before using your IDFA. You can change this in <strong>Settings → Privacy &amp; Security → Tracking</strong>.</li>
+    <li><strong>Learn more about Google ads.</strong> Visit <a href="https://adssettings.google.com">Google's ad settings</a>.</li>
+    <li><strong>Stop all collection.</strong> Uninstall the App. This also deletes the data saved on your device.</li>
+  </ul>
+  <p>If you opt out of personalized ads, you will still see ads, but they will be less related to your interests.</p>
+
+  <h2>Children's privacy</h2>
+  <p>The App is intended for users aged 13 and older and is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided personal information through the App, contact us and we will help delete it.</p>
+
+  <h2>Retention, security and your rights</h2>
+  <p><strong>Retention.</strong> We do not run our own servers for player data. Data saved on your device stays until you uninstall the App. Data collected by Google is kept according to Google's retention policies. Firebase Analytics data is kept for up to 14 months. Support emails are kept only as long as needed to help you.</p>
+  <p><strong>Security.</strong> Data sent to Google services is encrypted in transit. No method of storage or transfer is 100% secure, but we use these trusted providers to protect it.</p>
+  <p><strong>International transfers.</strong> Google may process data on servers outside your country, including in the United States, under its own safeguards.</p>
+  <p><strong>Your rights.</strong> Depending on where you live (for example the EU/UK under GDPR, or US states such as California), you may have the right to access, correct or delete your personal data, to object to or limit its use, and to opt out of targeted advertising. Because we do not hold an account or profile for you, the fastest way to use these rights is through the choices above and Google's tools. You can also contact us, and we will help or forward your request. You may also complain to your local data protection authority.</p>
+  <p><strong>Legal basis (EEA/UK).</strong> We rely on your consent for personalized ads and analytics where consent is required, and on our legitimate interest in keeping the App working, secure and free of fraud.</p>
+
+  <h2>Changes and contact</h2>
+  <p>We may update this policy when the App changes, for example when we add a new feature or service. We will change the effective date at the top, and for important changes we will show a notice in the App.</p>
+  <p>Questions or requests about your privacy:</p>
+  <ul>
+    <li><strong>Developer:</strong> Atul Maurya</li>
+    <li><strong>Email:</strong> <span class="todo">[add your support email here]</span></li>
+    <li><strong>App:</strong> Plop Pals (<code>com.app.ploppals</code>) on Google Play</li>
+  </ul>
+</main>
+<footer>© 2026 Atul Maurya · Plop Pals</footer>
+</body>
+</html>
