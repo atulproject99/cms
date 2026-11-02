@@ -4,17 +4,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Privacy Policy · KinSpot</title>
+    <meta name="theme-color" content="#0b1416" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Hind:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       :root {
-        /* KinSpot Dark Theme */
-        --bg: #0f172a;
-        --card: #1e293b;
-        --text: #f8fafc;
-        --muted: #94a3b8;
-        --primary: #2563eb;
-        --accent: #14b8a6;
-        --border: #334155;
+        /* KinSpot dark theme — same values as AppColors (lib/common/theme/app_colors.dart) */
+        --bg: #0b1416; /* darkBackground */
+        --card: #132226; /* darkSurface */
+        --card-variant: #1b2e33; /* darkSurfaceVariant */
+        --text: #eaf2f0; /* darkTextPrimary */
+        --muted: #9db3ae; /* darkTextSecondary */
+        --primary-dark: #0b7a6b; /* primaryDark */
+        --primary: #0f9d8a; /* primary */
+        --primary-light: #14c3a6; /* primaryLight */
+        --accent: #ff6b5a; /* accent (coral) */
+        --border: #23383d; /* darkDivider */
+        --heading: #14c3a6; /* dark theme primary = primaryLight */
+        --link: #14c3a6;
+        --header-bg: rgba(11, 20, 22, 0.95);
+        --dot-ring: rgba(20, 195, 166, 0.15);
         --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
         --radius: 16px;
         --maxw: 940px;
@@ -27,7 +41,10 @@
         margin: 0;
         background: var(--bg);
         color: var(--text);
+        /* Outfit for Latin text, Hind (the app's fallback) for Devanagari */
         font-family:
+          Outfit,
+          Hind,
           system-ui,
           Segoe UI,
           Roboto,
@@ -40,7 +57,7 @@
       header {
         position: sticky;
         top: 0;
-        background: rgba(15, 23, 42, 0.95);
+        background: var(--header-bg);
         backdrop-filter: blur(10px);
         border-bottom: 1px solid var(--border);
       }
@@ -67,7 +84,7 @@
         height: 12px;
         border-radius: 50%;
         background: linear-gradient(135deg, var(--primary), var(--accent));
-        box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+        box-shadow: 0 0 0 4px var(--dot-ring);
       }
 
       main {
@@ -77,10 +94,14 @@
       }
 
       .hero {
-        background:
-          linear-gradient(180deg, rgba(37, 99, 235, 0.08), transparent),
-          var(--card);
-        border: 1px solid var(--border);
+        /* Same teal gradient as the app's home header (AppColors.primaryGradient) */
+        background: linear-gradient(
+          135deg,
+          var(--primary-dark),
+          var(--primary),
+          var(--primary-light)
+        );
+        color: #ffffff;
         box-shadow: var(--shadow);
         border-radius: var(--radius);
         padding: 28px;
@@ -89,13 +110,14 @@
       h1 {
         margin: 0 0 8px;
         font-size: clamp(28px, 4vw, 40px);
+        font-weight: 700;
         line-height: 1.2;
-        color: var(--text);
+        color: #ffffff;
       }
 
       p.lead {
         margin: 0;
-        color: var(--muted);
+        color: rgba(255, 255, 255, 0.85);
         font-size: clamp(14px, 2.1vw, 18px);
       }
 
@@ -123,7 +145,8 @@
       h2 {
         margin: 6px 0;
         font-size: clamp(20px, 3vw, 24px);
-        color: var(--text);
+        font-weight: 700;
+        color: var(--heading);
       }
 
       ul {
@@ -137,9 +160,17 @@
       li strong {
         color: var(--text);
       }
+      li::marker {
+        color: var(--heading);
+      }
+      .card p {
+        margin: 0;
+        color: var(--muted);
+      }
 
       a {
-        color: var(--accent);
+        color: var(--link);
+        overflow-wrap: anywhere;
         text-decoration: none;
       }
       a:hover {

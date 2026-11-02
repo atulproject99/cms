@@ -22,9 +22,13 @@
         --muted: #9db3ae; /* darkTextSecondary */
         --primary-dark: #0b7a6b; /* primaryDark */
         --primary: #0f9d8a; /* primary */
-        --primary-light: #14c3a6; /* primaryLight (dark theme primary) */
+        --primary-light: #14c3a6; /* primaryLight */
         --accent: #ff6b5a; /* accent (coral) */
         --border: #23383d; /* darkDivider */
+        --heading: #14c3a6; /* dark theme primary = primaryLight */
+        --link: #14c3a6;
+        --header-bg: rgba(11, 20, 22, 0.95);
+        --dot-ring: rgba(20, 195, 166, 0.15);
         --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
         --radius: 16px;
         --maxw: 940px;
@@ -37,6 +41,7 @@
         margin: 0;
         background: var(--bg);
         color: var(--text);
+        /* Outfit for Latin text, Hind (the app's fallback) for Devanagari */
         font-family:
           Outfit,
           Hind,
@@ -52,7 +57,7 @@
       header {
         position: sticky;
         top: 0;
-        background: rgba(11, 20, 22, 0.95);
+        background: var(--header-bg);
         backdrop-filter: blur(10px);
         border-bottom: 1px solid var(--border);
       }
@@ -79,7 +84,7 @@
         height: 12px;
         border-radius: 50%;
         background: linear-gradient(135deg, var(--primary), var(--accent));
-        box-shadow: 0 0 0 4px rgba(20, 195, 166, 0.15);
+        box-shadow: 0 0 0 4px var(--dot-ring);
       }
 
       main {
@@ -141,7 +146,7 @@
         margin: 6px 0;
         font-size: clamp(20px, 3vw, 24px);
         font-weight: 700;
-        color: var(--primary-light);
+        color: var(--heading);
       }
 
       ul {
@@ -156,7 +161,7 @@
         color: var(--text);
       }
       li::marker {
-        color: var(--primary-light);
+        color: var(--heading);
       }
       .card p {
         margin: 0;
@@ -164,7 +169,7 @@
       }
 
       a {
-        color: var(--primary-light);
+        color: var(--link);
         overflow-wrap: anywhere;
         text-decoration: none;
       }
